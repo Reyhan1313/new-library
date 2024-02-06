@@ -1,0 +1,175 @@
+
+.card { 
+    display: inline-block; 
+     padding: 20px; 
+     border-radius: 15px;   
+     transition: .3s;
+     position: relative; 
+     text-align: center;
+  cursor: pointer; 
+} 
+
+.card > img { 
+    border-radius: 10px;
+    width: 200px; 
+    height: 300px; 
+       
+} 
+.main-c{ 
+  
+        display: flex; 
+        flex-direction: row;  
+        align-items: center;  
+        gap: 10px; 
+        margin: 50px 0;
+
+        
+}
+
+
+.filter{ 
+    background-color: #dbdfea; 
+    border-radius: 30px; 
+    padding: 20px;   
+margin-right: 20px;  
+align-self:self-start;   
+
+
+
+}
+
+.authors-c , .genre-c , .lang-c{ 
+h2{ 
+    font-size: medium;
+}
+
+}  
+
+
+
+.container{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+margin: 20px 0;
+   
+   
+    
+}
+
+
+.paginationC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 30px;
+}
+
+.paginationNumber {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white; 
+    font-weight: bold;
+    background-color: #3566e3;
+    border-radius: 10px;
+}
+
+.card:hover{ 
+    transition: .3s;
+    transform: translateY(-5px); 
+    box-shadow:2px 3px 9px 2px #dbdfea;  
+    background-color: white;
+} 
+
+.overlay{ 
+    position: absolute;
+    top: 20px;
+    background:#171b45b3; 
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    width: 200px; 
+    height: 300px; 
+    text-align: center;  
+    border-radius: 10px;  
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+.card:hover .overlay {
+    opacity: 1;
+} 
+
+.add-to-cart{ 
+    background-color: #3566e3; 
+    color: white; 
+    border-radius: 8px; 
+    border: none; 
+    padding: 3px 18px; 
+    transition: .3s;  
+    margin: 5px 0;
+} 
+
+.add-to-cart:hover{ 
+    background-color: #dbdfea;
+    color:#171b45;  
+    transition: .3s;
+} 
+
+.hide{ 
+
+display: none !important;
+
+}
+
+
+@media (max-width:888px){ 
+.card{ 
+    box-shadow:2px 3px 9px 2px #dbdfea;  
+    background-color: white;  
+
+    img{ 
+        width: 150px; 
+        height: 200px; 
+    }
+  
+}
+    .overlay{  
+        position: inherit;
+        opacity: 100%; 
+        top: 0; 
+        color: #171b45; 
+        background: none; 
+        display: inherit; 
+        width: inherit; 
+        height: inherit; 
+        font-size: 13px;
+    } 
+
+
+    .main-c{ 
+       margin:  30px 10px;
+    } 
+.filter{ 
+    flex: 0.8; 
+    
+    h2{ 
+        font-size: small;
+    }
+}
+    .container{ 
+        flex: 2; 
+        gap: 10px;
+    }
+    
+} 
+
+
